@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="surveyForm" class="form">
+        <div id="logo">
+            <img src="images/logo.png" alt="logo">
+            <h2>Survey Form</h2>
+        </div>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <div class="button-container">
+            <div id="_gender">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div id="_age">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+        </div>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college required>
+
+        <div id=" _fos">
+        <label for="fos">Field of Study:</label>
+        <select id="fos" name="fos" required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select>
+        </div>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="submitdetails" class="submit-details">
+        <p class="submitted">Thanks for your feedback!</p>
+        <p class="submitted">Name : <span id="submitName"></span></p>
+        <p class="submitted">Email : <span id="submitEmail"></span></p>
+        <p class="submitted">Phone number : <span id="submitPhone"></span></p>
+        <p class="submitted">Gender : <span id="submitGender"></span></p>
+        <p class="submitted">Age : <span id="submitAge"></span></p>
+        <p class="submitted">City : <span id="submitCity"></span></p>
+        <p class="submitted">College : <span id="submitCollege"></span></p>
+        <p class="submitted">Field Of Study : <span id="submitfos"></span></p>
+        <button type="button" onclick="confirmForm()">Confirm Details</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script> <!-- External JavaScript file for separation of concerns -->
+
+</body>
+
+</html>
