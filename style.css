@@ -82,15 +82,14 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
   }
+  
   
   button:hover {
     background-color: #2b27aebd;
   }
   
-  button{
-    margin-top: 20px;
-  }
   
   .submit-details {
     color: #ffff;
