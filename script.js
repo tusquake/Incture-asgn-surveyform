@@ -1,26 +1,32 @@
 function submitForm() {
+  
     const name = document.getElementById('name').value;
-    document.getElementById('submitName').innerText = name;
-
     const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const gender = document.getElementById('gender').value;
+    const age = document.getElementById('age').value;
+    const city = document.getElementById('city').value;
+    const college = document.getElementById('college').value;
+    const fos = document.getElementById('fos').value;
+
+    if (!name || !email || !phone || !gender || !age || !city || !college || !fos) {
+      alert("All Fields are required");
+      return;
+  }
+    document.getElementById('submitName').innerText = name;
+    
     document.getElementById('submitEmail').innerText = email;
 
-    const phone = document.getElementById('phone').value;
     document.getElementById('submitPhone').innerText = phone;
 
-    const gender = document.getElementById('gender').value;
     document.getElementById('submitGender').innerText = gender;
 
-    const age = document.getElementById('age').value;
     document.getElementById('submitAge').innerText = age;
 
-    const city = document.getElementById('city').value;
     document.getElementById('submitCity').innerText = city;
 
-    const college = document.getElementById('college').value;
     document.getElementById('submitCollege').innerText = college;
 
-    const fos = document.getElementById('fos').value;
     document.getElementById('submitfos').innerText = fos;
 
     
