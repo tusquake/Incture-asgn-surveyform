@@ -14,7 +14,7 @@ function submitForm() {
       return;
   }
     document.getElementById('submitName').innerText = name;
-    
+
     document.getElementById('submitEmail').innerText = email;
 
     document.getElementById('submitPhone').innerText = phone;
@@ -47,7 +47,12 @@ function confirmForm() {
     //add the text to be shown
     success.innerText = 'Details Saved!✔';
     //add the color of the text
-    success.style.color = 'blue'; 
+    success.style.color = 'blue';
     //add it to the body
     document.body.appendChild(success);
+
+    const myTimeout = setTimeout(function myGreeting() {
+      location.reload();
+    }, 2000);
+
 }
